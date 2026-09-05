@@ -1,0 +1,1 @@
+This repository was created to fulfill the Mobile System Programming course assignment. It will contain various code implementations that are needed according to the instructions of the given task.
