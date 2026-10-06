@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../texts/custom_text.dart';
 
-// Input field kustom dengan label, validasi, dan ikon opsional.
 class CustomTextField extends StatelessWidget {
   final String? label;
   final String? hintText;
@@ -32,7 +31,7 @@ class CustomTextField extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Label opsional di atas input.
+
         if (label != null) ...[
           CustomText(
             text: label!,
@@ -87,13 +86,3 @@ class CustomTextField extends StatelessWidget {
     );
   }
 }
-
-// Contoh pemakaian:
-// CustomTextField(
-//   label: 'Email',
-//   hintText: 'Masukkan email',
-//   controller: emailController,
-//   keyboardType: TextInputType.emailAddress,
-//   prefixIcon: Icon(Icons.email_outlined),
-//   validator: (v) => v!.isEmpty ? 'Email tidak boleh kosong' : null,
-// )

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// Komponen teks kustom yang dapat digunakan ulang.
-// Semua konfigurasi lewat named parameter.
 class CustomText extends StatelessWidget {
   final String text;
   final double fontSize;

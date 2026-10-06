@@ -93,7 +93,7 @@ class Product {
     required this.stock,
     this.description,
   });
-  
+
   String getStatusStok() {
     if (stock <= 0) return 'Habis';
     if (stock <= 5) return 'Stok Terbatas';

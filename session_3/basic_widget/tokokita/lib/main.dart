@@ -11,8 +11,7 @@ class TokoKitaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Ambil 3 produk dengan status berbeda untuk demo reusable:
-    // P1 Tersedia, P2 Stok Terbatas, P4 Habis
+
     final products = [dummyProducts[0], dummyProducts[1], dummyProducts[3]];
 
     return MaterialApp(

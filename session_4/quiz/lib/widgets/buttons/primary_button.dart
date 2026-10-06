@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import '../texts/custom_text.dart';
 
-// Tombol utama aplikasi (filled button).
-// Mendukung loading state agar bisa dipakai untuk proses async.
 class PrimaryButton extends StatelessWidget {
   final String label;
   final VoidCallback? onPressed;
@@ -33,7 +31,7 @@ class PrimaryButton extends StatelessWidget {
       width: width ?? double.infinity,
       height: height,
       child: ElevatedButton(
-        // Nonaktifkan tombol saat loading.
+
         onPressed: isLoading ? null : onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: background,
@@ -62,6 +60,3 @@ class PrimaryButton extends StatelessWidget {
     );
   }
 }
-
-// Contoh pemakaian:
-// PrimaryButton(label: 'Login', onPressed: () {}, isLoading: false)

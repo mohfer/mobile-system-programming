@@ -7,8 +7,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // F.1: 15 produk unik via ListView.builder, anti overflow via
-    // Expanded + Column ellipsis di ProductCard.
+
     final List<Product> products = dummyProducts;
 
     return Scaffold(
@@ -16,7 +15,7 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            // Langkah 1: header dengan Row + Column
+
             Padding(
               padding: const EdgeInsets.all(16),
               child: Row(
@@ -49,7 +48,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            // Langkah 4: daftar produk dengan ListView.builder
+
             Expanded(
               child: ListView.builder(
                 itemCount: products.length,

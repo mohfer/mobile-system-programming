@@ -8,7 +8,6 @@ void main() {
   runApp(const MyApp());
 }
 
-// Warna utama aplikasi (design system).
 const Color primaryColor = Color(0xFF4A6CF7);
 
 class MyApp extends StatelessWidget {
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Custom Component Demo',
       debugShowCheckedModeBanner: false,
-      // Theme global: font Poppins + warna utama.
+
       theme: ThemeData(
         primaryColor: primaryColor,
         colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      // Navigasi antar screen via named routes.
+
       initialRoute: '/',
       routes: {
         '/': (context) => LoginScreen(),

@@ -38,7 +38,7 @@ class _ProductCardState extends State<ProductCard> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Placeholder gambar + Image.network
+
             Container(
               height: 120,
               width: double.infinity,

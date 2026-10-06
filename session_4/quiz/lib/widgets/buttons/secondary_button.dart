@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../texts/custom_text.dart';
 
-// Tombol teks untuk link yang bisa diklik, misal "Daftar" / "Login".
 class TextLinkButton extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
